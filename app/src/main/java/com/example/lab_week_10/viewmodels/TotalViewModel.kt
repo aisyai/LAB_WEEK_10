@@ -12,4 +12,9 @@ class TotalViewModel : ViewModel() {
         val current = _total.value ?: 0
         _total.value = current + 1
     }
+
+    //Set new total value
+    fun setTotal(newTotal: Int) {
+        _total.postValue(newTotal)
+    }
 }
